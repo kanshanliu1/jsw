@@ -1,0 +1,198 @@
+//顶部样式
+body {
+    font-family: '黑体';
+    height: 5000px;
+}
+
+// 顶部导航栏样式
+.top {
+    height: 40px;
+    background-color: #EEEEEE; // background: url('../images/top_bj.gif') repeat-x;
+    // background: url('../images/top_logo.gif') repeat-x;
+    .nav {
+        ul {
+            height: 100%;
+            li {
+                height: 100%;
+                float: left;
+                line-height: 40px;
+                &:last-child a {
+                    border-right: none;
+                }
+            }
+            a {
+                color: #656565;
+                padding: 0 10px;
+                border-right: 1px solid #999;
+            }
+        }
+    }
+}
+
+//导航栏下方图片样式
+.banner {
+    padding-top: 1px;
+    margin-bottom: 20px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// 内容区
+.main {
+    .l-neirong {
+        width: 100%; // float: left;
+        padding: 20px 0 0 0;
+        box-shadow: 0px 0px 10px #888888;
+        .l-content {
+            ul {
+                display: flex;
+                justify-content: space-around;
+                height: 50px;
+                border-bottom: 1px dashed #e1e1e1;
+                padding: 0 10px;
+                li {
+                    height: 100%;
+                    line-height: 50px;
+                    text-align: center;
+                    font-size: 15px;
+                    color: #444; // border-bottom: 1px dashed #e1e1e1;
+                    &.index {
+                        width: 30px;
+                        color: green;
+                    }
+                    &.info {
+                        text-align: left;
+                        width: 500px; // flex: 1;
+                    }
+                    &.price {
+                        width: 100px;
+                        text-align: left;
+                    }
+                    &.minus,
+                    &.plus {
+                        width: 20px;
+                        color: lightgray;
+                    }
+                    &.num {
+                        width: 10px;
+                        font-size: 16px;
+                        font-weight: 900;
+                        color:orangered;
+                    }
+                    &.addbuycar,
+                    &.delbuycar {
+                        width: 100px;
+                        border: 1px solid gainsboro;
+                        height: 40px;
+                        line-height: 40px;
+                        margin-right: 10px;
+                        border-radius: 10px;
+                        margin-top: 5px;
+                        background-color: #337ab7;
+                        color: white;
+                        font-weight: 500;
+                    }
+                    &.delbuycar {
+                        width: 120px;
+                    }
+                    &.detail {
+                        width: 50px;
+                    }
+                }
+            }
+        } //左边内容区标题
+        .tit {
+            margin-top: 10px;
+            display: flex;
+            height: 25px;
+            li {
+                height: 100%;
+                text-align: center;
+                line-height: 25px;
+                border: none;
+                font-size: 20px;
+                font-weight: 900;
+            }
+            .tit-info {
+                flex: 5;
+            }
+            .tit-pirce {
+                flex: 2;
+            }
+            .tit-num {
+                flex: 2;
+            }
+            .tit-edit {
+                flex: 2;
+            }
+            .tit-detail {
+                flex: 2;
+            }
+        }
+    } // .r-fuli {
+    //     width: 280px;
+    //     height: 100px;
+    //     background-color: green;
+    //     float: right;
+    // }
+}
+
+//底部购物车区
+.buycarbox {
+    width: 100%;
+    background-color: #337ab7;
+    position: fixed;
+    bottom: 0;
+    div{
+        // margin: 0 5px;
+    }
+}
+
+.buycar {
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    div {
+        // float: left;
+        width: 230px;
+        height: 50px;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 7px;
+        line-height: 50px;
+        text-align: center;
+        .info {
+            font-size: 20px;
+        }
+        .m {
+            font-size: 30px;
+            color: #FF7F50;
+            font-weight: 700;
+        }
+        .price {
+            font-size: 26px;
+            color: #F81313;
+            font-weight: bolder;
+            font-family: '微软雅黑';
+        }
+    }
+    div:first-child .m,
+    div:first-child .price {
+        text-decoration: line-through;
+        color: #8F8F8F;
+    }
+    .open {
+        width: 120px;
+        font-size: 20px;
+        color: white;
+        background-color: #F81313;
+        border: 1px solid #F81313;
+    }
+    .login {
+        color: white;
+        font-size: 20px;
+    }
+}
