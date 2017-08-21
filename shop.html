@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>讲师网购买页面</title>
-    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/shop.css">
-    <script src="./js/jquery-3.2.1.min.js"></script>
-    <script src="./js/shop.js"></script>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -31,74 +29,87 @@
         <img src="./images/shop_banner.jpg">
     </div>
     <!--内容区-->
-    <div class="main banxin clearfix">
-        <!--左边服务内容区-->
-        <div class="l-neirong">
-            <ul class="tit">
-                <li class="tit-info">服务内容</li>
-                <li class="tit-pirce">价格</li>
-                <li class="tit-num">数量</li>
-                <li class="tit-edit">操作</li>
-            </ul>
-            <div class="l-content">
-                <ul>
-                    <li class="index">1</li>
-                    <li class="info">网站首页：图片+联系方式+主讲课程+主页链接（中旭和中国讲师网）</li>
-                    <li class="price">(<span class="serve-price">5000</span>元/年)</li>
-                    <li class="numedit minus"><span class="glyphicon glyphicon-minus"></span></li>
-                    <li class="num">0</li>
-                    <li class="numedit plus"><span class="glyphicon glyphicon-plus"></span></li>
-                    <li class="addbuycar">加入购物车</li>
-                    <li class="delbuycar">从购物车中删除</li>
-                    <li class="detail">详情</li>
-                </ul>
-                <ul>
-                    <li class="index">1</li>
-                    <li class="info">网站首页：图片+联系方式+主讲课程+主页链接（中旭和中国讲师网）</li>
-                    <li class="price">(<span class="serve-price">3000</span>元/年)</li>
-                    <li class="minus"><span class="glyphicon glyphicon-minus"></span></li>
-                    <li class="num">1</li>
-                    <li class="plus"><span class="glyphicon glyphicon-plus"></span></li>
-                    <li class="addbuycar">加入购物车</li>
-                    <li class="delbuycar">从购物车中删除</li>
-                    <li class="detail">详情</li>
-                </ul>
-                                <ul>
-                    <li class="index">1</li>
-                    <li class="info">网站首页：图片+联系方式+主讲课程+主页链接（中旭和中国讲师网）</li>
-                    <li class="price">(<span class="serve-price">5000</span>元/年)</li>
-                    <li class="minus"><span class="glyphicon glyphicon-minus"></span></li>
-                    <li class="num">1</li>
-                    <li class="plus"><span class="glyphicon glyphicon-plus"></span></li>
-                    <li class="addbuycar">加入购物车</li>
-                    <li class="delbuycar">从购物车中删除</li>
-                    <li class="detail">详情</li>
-                </ul>
-                                <ul>
-                    <li class="index">1</li>
-                    <li class="info">网站首页：图片+联系方式+主讲课程+主页链接（中旭和中国讲师网）</li>
-                    <li class="price">(<span class="serve-price">5000</span>元/年)</li>
-                    <li class="minus"><span class="glyphicon glyphicon-minus"></span></li>
-                    <li class="num">1</li>
-                    <li class="plus"><span class="glyphicon glyphicon-plus"></span></li>
-                    <li class="addbuycar">加入购物车</li>
-                    <li class="delbuycar">从购物车中删除</li>
-                    <li class="detail">详情</li>
-                </ul>
-            </div>
+    <div class="main banxin ">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <!--<div class="panel-body">
+            </div>-->
+            <table class="table">
+                <thead>
+                    <th></th>
+                    <th class="tit-info">服务内容</th>
+                    <th class="tit-pirce">价格</th>
+                    <th></th>
+                    <th class="tit-num">数量</th>
+                    <th></th>
+                    <th class="tit-edit">操作</th>
+                    <th></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="index">1</td>
+                        <td class="content">网站首页：图片+联系方式+主讲课程+主页链接（中旭和中国讲师网）</td>
+                        <td class="price">(<span class="serve-price">5000</span>元/年)</td>
+                        <td class="numedit minus"><span class="glyphicon glyphicon-minus"></span></td>
+                        <td class="num"><input type="text" value="0" class="keynum"></td>
+                        <td class="numedit plus"><span class="glyphicon glyphicon-plus"></span></td>
+                        <td>
+                            <button class="btn btn-danger btn-sm delcar">从购物车删除</button>
+                        </td>
+                        <td class="detail">详情</td>
+                    </tr>
+                    <tr>
+                        <td class="index">1</td>
+                        <td class="content">网站首页：图片+联系方式+主讲课程+主页链接（中旭和中国讲师网）</td>
+                        <td class="price">(<span class="serve-price">3000</span>元/年)</td>
+                        <td class="numedit minus"><span class="glyphicon glyphicon-minus"></span></td>
+                        <td class="num"><input type="text" value="0" class="keynum"></td>
+                        <td class="numedit plus"><span class="glyphicon glyphicon-plus"></span></td>
+                        <td>
+                            <button class="btn btn-danger btn-sm delcar">从购物车删除</button>
+                        </td>
+                        <td class="detail">详情</td>
+                    </tr>
+                    <tr>
+                        <td class="index">1</td>
+                        <td class="content">网站首页：图片+联系方式+主讲课程+主页链接（中旭和中国讲师网）</td>
+                        <td class="price">(<span class="serve-price">2000</span>元/年)</td>
+                        <td class="numedit minus"><span class="glyphicon glyphicon-minus"></span></td>
+                        <td class="num"><input type="text" value="0" class="keynum"></td>
+                        <td class="numedit plus"><span class="glyphicon glyphicon-plus"></span></td>
+                        <td>
+                            <button class="btn btn-danger btn-sm delcar">从购物车删除</button>
+                        </td>
+                        <td class="detail">详情</td>
+                    </tr>
+                    <tr>
+                        <td class="index">1</td>
+                        <td class="content">网站首页：图片+联系方式+主讲课程+主页链接（中旭和中国讲师网）</td>
+                        <td class="price">(<span class="serve-price">1000</span>元/年)</td>
+                        <td class="numedit minus"><span class="glyphicon glyphicon-minus"></span></td>
+                        <td class="num"><input type="text" value="0" class="keynum"></td>
+                        <td class="numedit plus"><span class="glyphicon glyphicon-plus"></span></td>
+                        <td>
+                            <button class="btn btn-danger btn-sm delcar">从购物车删除</button>
+                        </td>
+                        <td class="detail">详情</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <!--右边福利区-->
-        <div class="r-fuli"></div>
     </div>
     <!--底部固定购物车-->
     <div class="buycarbox">
         <div class="buycar banxin">
-            <div class="countmoney"><span class="info">总金额：</span><span class="m">￥</span><span class="price">999999</span></div>
-            <div class="youhuimoney"><span class="info">已优惠：</span><span class="m">￥</span><span class="price">690000</span></div>
-            <div class="actualmoney"><span class="info">实付款：</span><span class="m">￥</span><span class="price">440000</span></div>
+            <div class="countmoney"><span class="info">总金额：</span><span class="m">￥</span><span class="price">0</span></div>
+            <div class="youhuimoney"><span class="info">已优惠：</span><span class="m">￥</span><span class="price">0</span></div>
+            <div class="actualmoney"><span class="info">实付款：</span><span class="m">￥</span><span class="price">0</span></div>
             <div class="open">立即开通</div><span class="login">您还未登录，快去登录吧</span>
         </div>
     </div>
 </body>
 
 </html>
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="./js/shop.js"></script>
